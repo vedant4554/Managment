@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Intern Management System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Intern Management System</h1>
+
+    <div class="form">
+      <input type="text" id="name" placeholder="Name">
+      <input type="number" id="age" placeholder="Age">
+      <input type="text" id="department" placeholder="Department">
+      <input type="number" id="duration" placeholder="Duration (months)">
+      <input type="text" id="address" placeholder="Address">
+      <input type="text" id="contact" placeholder="Contact Number">
+      <input type="email" id="email" placeholder="Email">
+      <input type="text" id="projects" placeholder="Projects">
+      <button id="addBtn">Add Intern</button>
+    </div>
+
+    <h2>Intern List</h2>
+    <button id="exportBtn" class="export-btn">📥 Export to CSV</button>
+    <p class="hint">(Hidden feature: Click the button 5 times for a surprise)</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Department</th>
+          <th>Duration</th>
+          <th>Address</th>
+          <th>Contact</th>
+          <th>Email</th>
+          <th>Projects</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="internTableBody"></tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
